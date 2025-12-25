@@ -1,0 +1,19 @@
+integrations:
+  database:
+    enabled: true
+    provider: sqlite
+    connection_string: ${DATABASE_URL}
+
+  document_store:
+    enabled: true
+    provider: local
+    upload_dir: ${UPLOAD_DIR}
+
+  legal_database:
+    enabled: false
+    provider: westlaw
+    api_key: ${LEGAL_DB_API_KEY}
+
+  template_repository:
+    enabled: true
+    path: ./templates
